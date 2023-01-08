@@ -1,17 +1,17 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Sidebar from "../components/Sidebar";
+import Center from "../components/Center"
 
 const Home: NextPage = () => {
   return (
-    <div className="">
-      <h1>This is a spotify 2.0 build</h1>
-
-      <main>
-        {/* Sidebar */}
-        {/* Center */}
+    <div className="bg-black h-screen overflow-hidden">
+      <main className="flex">
+        <Sidebar />
+        <Center />
       </main>
-
+      
       <div>{/* Player */}</div>
     </div>
   )
